@@ -13,36 +13,6 @@
 #define KWHT  "\x1B[37m"
 #define RESET "\x1B[0m"
 
-void Suma(double a, double b) {
-    printf( KMAG "[SUMA: ]" RESET "%f + %f , resultado: %.1f\n", a, b , suma(a,b)); 
-    printf("\n");
-}
-
-void Resta(double a, double b) {
-    printf( KBLU "[RESTA: ]" RESET "%f - %f , resultado: %.1f\n", a, b , resta(a,b)); 
-    printf("\n");
-}
-
-void Mul(double a, double b) {
-    printf( KRED "[MULTIPLICACION: ]" RESET "%f * %f , resultado: %.1f\n", a, b , mul(a,b)); 
-    printf("\n");
-}
-
-void Division(double a, double b) {
-    printf( KYEL "[DIVISION: ]" RESET "%f / %f , resultado: %.1f\n", a, b , divi(a,b)); 
-    printf("\n");
-}
-
-void Raiz(double a ) {
-    printf(KCYN "[RAIZ: ]" RESET "%f  , resultado: %.1f\n", a, raiz(a)); 
-    printf("\n");
-}
-
-void Coseno(double a) {
-    printf( KGRN "[COSENO]" RESET "coseno(%.2f), resultado: %.3f\n", a, coseno(a)); 
-    printf("\n");
-}
-
 int main() {
 
     printf( KMAG "[SUMA] ---> " RESET "%d + %d, resultado ---> %.3f\n\n", 4, 5, suma(4, 5));

@@ -2,6 +2,8 @@
 
 /**
  * Funcion auxiliar para obtener el valor absoluto de un double
+ * |a| = -1*a si a < 0
+ * |a| = a si a >= 0
 */
 double fabs_t(double a){
 	if( a < 0.0){
@@ -9,21 +11,37 @@ double fabs_t(double a){
 	} else return a;
 }
 
+/**
+ * Función para obtener la suma de dos números
+ * a + b = c
+*/
 double suma(double a, double b)
 {
 	return a + b;
 }
 
+/**
+ * Función para restar dos números
+ * a - b = c
+*/
 double resta(double a, double b)
 {
 	return a - b;
 }
 
+/**
+ * Función para multiplicar dos números
+ * a * b = c
+*/
 double mul(double a, double b)
 {
 	return a * b;
 }
 
+/**
+ * Función para dividir dos números
+ * a / b = c
+*/
 double divi(double a, double b)
 {
 	// Error si el  cociente es 0, ya que no se puede dividir
@@ -32,7 +50,10 @@ double divi(double a, double b)
 	return a / b;
 }
 
-// https://github.com/FabianNorbertoEscobar/Programacion-Estructurada-en-C/blob/master/aproximar%20ra%C3%ADz%20cuadrada/funciones.c
+/**
+ * Función para sacar la raíz cuadrada de un número por aproximación.
+ * Ref: https://github.com/FabianNorbertoEscobar/Programacion-Estructurada-en-C/blob/master/aproximar%20ra%C3%ADz%20cuadrada/funciones.c
+*/
 double raiz(double x)
 {
 	float t_ant, t_act;
@@ -45,8 +66,10 @@ double raiz(double x)
 	return t_act;
 }
 
-// https://github.com/FabianNorbertoEscobar/Programacion-Estructurada-en-C/blob/master/aproximar%20coseno/funciones.c
-
+/**
+ * Función para obtener el coseno de un número en radianes
+ * Ref: https://github.com/FabianNorbertoEscobar/Programacion-Estructurada-en-C/blob/master/aproximar%20coseno/funciones.c
+*/
 double coseno(double x)
 {
 	int i, signo;
