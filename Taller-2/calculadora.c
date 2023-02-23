@@ -38,38 +38,38 @@ int main() {
             scanf("%lf", &a);
             printf(KGRN "Digite el segundo número: \n" RESET);
             scanf("%lf", &b);
-            printf( KMAG "[SUMA] ---> " RESET "%.3lf + %.3lf, resultado ---> %.3f\n\n", a, b, suma(a, b));
+            printf( KMAG "\n[SUMA] ---> " RESET "%.3lf + %.3lf, resultado ---> %.3f\n\n", a, b, suma(a, b));
             continue;
         case 2:
             printf(KGRN "Digite el primer número: \n" RESET);
             scanf("%lf", &a);
-            printf(KGRN "Digite el segundo número: \n\n" RESET);
+            printf(KGRN "Digite el segundo número: \n" RESET);
             scanf("%lf", &b);
-            printf( KBLU "[RESTA] ---> " RESET "%.3lf - %.3lf, resultado ---> %.3lf\n\n", a, b , resta(a, b));
+            printf( KBLU "\n[RESTA] ---> " RESET "%.3lf - %.3lf, resultado ---> %.3lf\n\n", a, b , resta(a, b));
             continue;
         case 3:
             printf(KGRN "Digite el primer número: \n" RESET);
             scanf("%lf", &a);
-            printf(KGRN "Digite el segundo número: \n\n" RESET);
+            printf(KGRN "Digite el segundo número: \n" RESET);
             scanf("%lf", &b);
-            printf( KRED "[MULTIPLICACION] ---> " RESET "%.3lf * %.3lf, resultado ---> %.3lf\n\n", a, b , mul(a, b));
+            printf( KRED "\n[MULTIPLICACION] ---> " RESET "%.3lf * %.3lf, resultado ---> %.3lf\n\n", a, b , mul(a, b));
             continue;
         case 4:
             printf(KGRN "Digite el primer número: \n" RESET);
             scanf("%lf", &a);
-            printf(KGRN "Digite el segundo número: \n\n" RESET);
+            printf(KGRN "Digite el segundo número: \n" RESET);
             scanf("%lf", &b);
-            printf( KYEL "[DIVISION] ---> " RESET "%.3lf / %.3lf, resultado ---> %.3lf\n\n", a, b, divi(a, b));
+            printf( KYEL "\n[DIVISION] ---> " RESET "%.3lf / %.3lf, resultado ---> %.3lf\n\n", a, b, divi(a, b));
             continue;
         case 5:
-            printf(KGRN "Digite el número a aplicar la raíz cuadrada: \n\n" RESET);
+            printf(KGRN "Digite el número a aplicar la raíz cuadrada: \n" RESET);
             scanf("%lf", &a);
-            printf(KCYN "[RAIZ] ---> " RESET "%.3lf, resultado ---> %.3f\n\n", a, raiz(a));
+            printf(KCYN "\n[RAIZ] ---> " RESET "%.3lf, resultado ---> %.3f\n\n", a, raiz(a));
             continue;
         case 6:
-            printf(KGRN "Digite el número a aplicar el coseno (en grados): \n\n" RESET);
+            printf(KGRN "Digite el número a aplicar el coseno (en grados): \n" RESET);
             scanf("%lf", &a);
-            printf( KGRN "[COSENO] ---> " RESET "cos(%.3lf), resultado ---> %.3f\n\n", a, coseno(a));
+            printf( KGRN "\n[COSENO] ---> " RESET "cos(%.3lf), resultado ---> %.3f\n\n", a, coseno(a));
             continue;
         case 0:
             break;
