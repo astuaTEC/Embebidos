@@ -74,6 +74,7 @@ double coseno(double x)
 {
 	int i, signo;
 	float cos, ult; // ult=último término
+	x = x * (PI/180);
 	i = 1;
 	cos = ult = 1;						 // primer término
 	signo = -1;							 // comienzo con signo negativo porque el segundo término es negativo

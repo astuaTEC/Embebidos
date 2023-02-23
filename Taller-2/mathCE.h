@@ -1,6 +1,7 @@
 #ifndef MATHCE
 #define MATHCE
 #define TOL 10e-3 // tolerancia
+#define PI 3.141592654  //Se define PI
 #include <stdlib.h>
 
 double suma(double a, double b);

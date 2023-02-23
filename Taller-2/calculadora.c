@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "mathCE.h" //Se incluye la libreria mathCE
 
-#define PI 3.141592654  //Se define PI para probar el coseno
-
 // COLORES para imprimir en consola
 #define KRED  "\x1B[31m"
 #define KGRN  "\x1B[32m"
@@ -15,17 +13,72 @@
 
 int main() {
 
-    printf( KMAG "[SUMA] ---> " RESET "%d + %d, resultado ---> %.3f\n\n", 4, 5, suma(4, 5));
+    int option = 10;
+    double a, b, c = 0;
 
-    printf( KBLU "[RESTA] ---> " RESET "%f - %f, resultado ---> %.3f\n\n", 20.3, 3.0 , resta(20.3, 3)); 
+    while (option != 0)
+    {
+        a, b, c = 0;
+        option = 10;
+        printf(KRED "Digite una opción de las siguientes: \n\n" RESET);
+        printf(KYEL "[1] " RESET "para la suma \n");
+        printf(KYEL "[2] " RESET "para la resta \n");
+        printf(KYEL "[3] " RESET "para la multiplicación\n");
+        printf(KYEL "[4] " RESET "para la división \n");
+        printf(KYEL "[5] " RESET "para la raíz cuadrada \n");
+        printf(KYEL "[6] " RESET "para el coseno \n");
+        printf(KYEL "[0] " RESET "para salir \n");
 
-    printf( KRED "[MULTIPLICACION] ---> " RESET "%f * %f, resultado ---> %.3f\n\n", 44.5, 22.5 , mul(44.5, 22.5));
+        scanf("%i", &option);
 
-    printf( KYEL "[DIVISION] ---> " RESET "%d / %d, resultado ---> %.3f\n\n", 9, 6, divi(9, 6));
+        switch (option)
+        {
+        case 1:
+            printf(KGRN "Digite el primer número: \n" RESET);
+            scanf("%lf", &a);
+            printf(KGRN "Digite el segundo número: \n" RESET);
+            scanf("%lf", &b);
+            printf( KMAG "[SUMA] ---> " RESET "%.3lf + %.3lf, resultado ---> %.3f\n\n", a, b, suma(a, b));
+            continue;
+        case 2:
+            printf(KGRN "Digite el primer número: \n" RESET);
+            scanf("%lf", &a);
+            printf(KGRN "Digite el segundo número: \n\n" RESET);
+            scanf("%lf", &b);
+            printf( KBLU "[RESTA] ---> " RESET "%.3lf - %.3lf, resultado ---> %.3lf\n\n", a, b , resta(a, b));
+            continue;
+        case 3:
+            printf(KGRN "Digite el primer número: \n" RESET);
+            scanf("%lf", &a);
+            printf(KGRN "Digite el segundo número: \n\n" RESET);
+            scanf("%lf", &b);
+            printf( KRED "[MULTIPLICACION] ---> " RESET "%.3lf * %.3lf, resultado ---> %.3lf\n\n", a, b , mul(a, b));
+            continue;
+        case 4:
+            printf(KGRN "Digite el primer número: \n" RESET);
+            scanf("%lf", &a);
+            printf(KGRN "Digite el segundo número: \n\n" RESET);
+            scanf("%lf", &b);
+            printf( KYEL "[DIVISION] ---> " RESET "%.3lf / %.3lf, resultado ---> %.3lf\n\n", a, b, divi(a, b));
+            continue;
+        case 5:
+            printf(KGRN "Digite el número a aplicar la raíz cuadrada: \n\n" RESET);
+            scanf("%lf", &a);
+            printf(KCYN "[RAIZ] ---> " RESET "%.3lf, resultado ---> %.3f\n\n", a, raiz(a));
+            continue;
+        case 6:
+            printf(KGRN "Digite el número a aplicar el coseno (en grados): \n\n" RESET);
+            scanf("%lf", &a);
+            printf( KGRN "[COSENO] ---> " RESET "cos(%.3lf), resultado ---> %.3f\n\n", a, coseno(a));
+            continue;
+        case 0:
+            break;
 
-    printf(KCYN "[RAIZ] ---> " RESET "%d, resultado ---> %.3f\n\n", 49, raiz(49)); 
-
-    printf( KGRN "[COSENO] ---> " RESET "cos(%.2f), resultado ---> %.3f\n", PI, coseno(PI));
+        default:
+            continue;
+        }
+    }
+    
 
     return 0;
 }
