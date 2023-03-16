@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/calculadora.dir/src/calculadora.c.o -o calculadora  -Wl,-rpath,/home/samastua/Documents/TEC/Embebidos/Git/Taller-5/build/lib: lib/libliboperaciones.so 
