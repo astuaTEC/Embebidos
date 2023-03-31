@@ -1,0 +1,1 @@
+cmd_/home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory/modules.order := {   echo /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory/memory.ko; :; } | awk '!x[$$0]++' - > /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory/modules.order

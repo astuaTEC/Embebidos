@@ -1,0 +1,1 @@
+cmd_/home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/modules.order := {   echo /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/nothing.ko; :; } | awk '!x[$$0]++' - > /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/modules.order

@@ -1,0 +1,1 @@
+cmd_/home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/memory.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/memory.ko /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/memory.o /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/memory.mod.o;  true

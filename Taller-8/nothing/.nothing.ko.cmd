@@ -1,0 +1,1 @@
+cmd_/home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/nothing.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/nothing.ko /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/nothing.o /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/nothing/nothing.mod.o;  true

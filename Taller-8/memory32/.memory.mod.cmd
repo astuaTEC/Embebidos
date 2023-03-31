@@ -1,0 +1,1 @@
+cmd_/home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/memory.mod := printf '%s\n'   memory.o | awk '!x[$$0]++ { print("/home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/"$$0) }' > /home/samastua/Documents/TEC/Embebidos/Git/Taller-8/memory32/memory.mod
