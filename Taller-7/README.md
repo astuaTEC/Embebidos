@@ -4,7 +4,7 @@ Esta biblioteca ya cuenta con todos los archivos necesarios para simplemente usa
 
 Solamente deberá seguir los siguientes pasos:
 
-- Abrir una terminal en el direcciotio `Taller-7`.
+- Abrir una terminal en el directorio `Taller-7`.
 - Insertar la tarjeta micro SD en su computadora.
 - Escribir el comando `lsblk` para ver los discos conectados a la computadora y con ello encontrar la tarjeta micro SD. Usualmente sale como `/dev/sdb` (en mi caso era `/media/samas/root`).
 - Escribir el siguiente comando: `sudo cp -r build/usr/* /media/samas/root` (Verificar la localización de la SD).
