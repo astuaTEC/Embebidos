@@ -1,3 +1,31 @@
+# Preguntas
+### ¿Qué pasos debe seguir antes de escribir o leer de un puerto de entrada/salida general (GPIO)? 
+
+1. Identificar los pines correspondientes, en este caso de la RPi 2, que cuenta con 40 GPIOs.
+2. Obtener el voltaje de operación de los pines.
+3. Seleccionar el o los pines a usar.
+4. Definir el modo de operación del pin (Entrada/Salida).
+5. Configurar las direcciones del puerto, donde se reciben o se envían los datos.
+6. Según el modo elegido y el lenguaje/biblioteca que se use, se debe leer o escribir en GPIO.
+
+[Referencia](https://solectroshop.com/es/content/60-5-pines-gpio-y-su-programacion)
+
+
+### ¿Qué comando podría utilizar, bajo Linux, para escribir a un GPIO específico?
+
+En linux, de forma predeterminada, el acceso a los pines no está disponible, por lo que debemos habilitarlo. 
+De modo que se hace uso de un archivo llamado export para este propósito. Escribir en este archivo hará que el kernel nos proporcione el pinout apropiado del procesador. Por consiguiente, si se quiere hacer uso de un pin llamado GPIO21, se deberá ejecutar un comando como el siguiente:
+
+`echo 21 > /sys/class/gpio/export`
+
+De este modo tendremos habilitado el acceso a este GPIO, y seguidamente se pueden ejecutar los siguientes comandos para modificarlo:
+
+`echo 1 > /sys/class/gpio/gpio21/value` (Para asignarlo en 1)
+
+`echo 0 > /sys/class/gpio/gpio21/value` (Para asignarlo en 0)
+
+[Referencia](https://solectroshop.com/es/content/60-5-pines-gpio-y-su-programacion)
+
 # GPIO Manager Library
 
 Esta biblioteca ya cuenta con todos los archivos necesarios para simplemente usarlos en la raspberry pi 2 model B.
@@ -32,6 +60,6 @@ Además se creó el paquete de código con la librería. Lo podrá encontrar den
 ## Estudiantes
 ---
 * Saymon Astúa Madrigal - 2018143188
-* Martín Calderón Blanco - 2016
-* Agustín Venegas Vega - 2018
+* Martín Calderón Blanco - 2016163112
+* Agustín Venegas Vega - 2018250621
 ---
